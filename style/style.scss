@@ -1,0 +1,224 @@
+@import 'reset';
+@import 'mixins';
+
+.container{
+    margin: 0 auto;
+    max-width: 1220px;
+}
+
+.header{
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    background-attachment: fixed;
+    height: 100px;
+    &_wrapper{
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+        
+    }
+    &__menu{
+        &--list{
+        display: flex;
+        font-size: 20px;
+        gap: 15px;
+        @include tablet{
+            display: none;
+        }
+        a{
+            color: #fff;
+            &:hover{
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+
+}
+}
+
+.book{
+    height: 600px;
+    background-image: url(../assets/img/favorite-book.avif);
+    @include tablet{
+        height: 500px;
+        background-size: cover;
+    }
+    @include mobile{
+        height: 400px;
+    }
+    &_wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &__text{
+        padding-top: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        &--title{
+            font-size: 20px;
+            font-family: 'DM serif display';
+            @include tablet{
+                font-size: 18px;
+            }
+        }
+        &--main{
+            font-size: 60px;
+            font-family: 'DM serif display';
+            align-items: center;
+            padding-top: 150px;
+            width: 500px;
+            text-align: center;
+            @include tablet{
+                font-size: 40px;
+                padding-top: 90px;
+            }
+
+            @include mobile{
+                font-size: 25px;
+                width: 400px;
+                padding-top: 40px;
+            }
+        }
+        &--scroll{
+            font-family: 'Lato';
+            font-size: 16px;
+            padding-top: 100px;
+            @include mobile{
+                padding-top: 70px;
+            }
+        }
+    }
+
+}
+
+.product{
+    padding-top: 50px;
+    &__card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-content: center;
+        @include tablet{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &--item{
+            row-gap: 20px;
+            &--photo{
+                width: 300px;
+                height: 300px;
+                margin-bottom: 5px;
+                @include mobile{
+                    width: 290px;
+                    height: 290px;
+                }
+            }
+            &--title{
+                font-size: 18px;
+                font-family: 'DM serif display';
+                margin-bottom: 5px;
+
+
+            }
+            &--price{
+                font-size: 16px;
+                font-family: 'Lato';
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.footer{
+    margin-top: 50px;
+    height: 400px;
+    background-color: #000;
+    @include tablet{
+        height: 520px;
+    }
+    &_wrapper{
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        padding-top: 50px;
+        @include tablet{
+            display: grid;
+            padding-left: 10px;
+        }
+        @include mobile{
+            padding-left: 1px;
+        }
+    }
+    &__title{
+        &--name{
+            font-size: 18px;
+            font-family: 'DM serif display';
+            @include tablet{
+                padding-bottom: 20px;
+            }
+        }
+
+    }
+
+    &__menu{
+        &--items{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            &-biriki{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+                @include tablet{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+
+                }
+            }
+
+            &--choice{
+                i{
+                    display: flex;
+                }
+                a{
+                    color: #fff;
+                    display: flex;
+                    gap: 20px;
+                    i{
+                        display: flex;
+                    }
+                }
+            }
+            &--title{
+                margin-bottom: 20px;
+                a{
+                    color: #fff;
+                    font-size: 25px;
+                font-family: 'DM serif display';
+                }
+            }
+
+
+        }
+    }
+    &_icons{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    &_icon{
+        display: flex;
+        gap: 50px;
+        // justify-content: space-between;
+    }
+
+
+}

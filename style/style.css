@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+.header {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  background-attachment: fixed;
+  height: 100px;
+}
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.header__menu--list {
+  display: flex;
+  font-size: 20px;
+  gap: 15px;
+}
+@media only screen and (max-width: 991px) {
+  .header__menu--list {
+    display: none;
+  }
+}
+.header__menu--list a {
+  color: #fff;
+}
+.header__menu--list a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.book {
+  height: 600px;
+  background-image: url(../assets/img/favorite-book.avif);
+}
+@media only screen and (max-width: 991px) {
+  .book {
+    height: 500px;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .book {
+    height: 400px;
+  }
+}
+.book_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.book__text {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.book__text--title {
+  font-size: 20px;
+  font-family: "DM serif display";
+}
+@media only screen and (max-width: 991px) {
+  .book__text--title {
+    font-size: 18px;
+  }
+}
+.book__text--main {
+  font-size: 60px;
+  font-family: "DM serif display";
+  align-items: center;
+  padding-top: 150px;
+  width: 500px;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .book__text--main {
+    font-size: 40px;
+    padding-top: 90px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .book__text--main {
+    font-size: 25px;
+    width: 400px;
+    padding-top: 40px;
+  }
+}
+.book__text--scroll {
+  font-family: "Lato";
+  font-size: 16px;
+  padding-top: 100px;
+}
+@media only screen and (max-width: 767px) {
+  .book__text--scroll {
+    padding-top: 70px;
+  }
+}
+
+.product {
+  padding-top: 50px;
+}
+.product__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: center;
+}
+@media only screen and (max-width: 991px) {
+  .product__card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .product__card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.product__card--item {
+  row-gap: 20px;
+}
+.product__card--item--photo {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 767px) {
+  .product__card--item--photo {
+    width: 290px;
+    height: 290px;
+  }
+}
+.product__card--item--title {
+  font-size: 18px;
+  font-family: "DM serif display";
+  margin-bottom: 5px;
+}
+.product__card--item--price {
+  font-size: 16px;
+  font-family: "Lato";
+  margin-bottom: 5px;
+}
+
+.footer {
+  margin-top: 50px;
+  height: 400px;
+  background-color: #000;
+}
+@media only screen and (max-width: 991px) {
+  .footer {
+    height: 520px;
+  }
+}
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding-top: 50px;
+}
+@media only screen and (max-width: 991px) {
+  .footer_wrapper {
+    display: grid;
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer_wrapper {
+    padding-left: 1px;
+  }
+}
+.footer__title--name {
+  font-size: 18px;
+  font-family: "DM serif display";
+}
+@media only screen and (max-width: 991px) {
+  .footer__title--name {
+    padding-bottom: 20px;
+  }
+}
+.footer__menu--items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__menu--items-biriki {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+@media only screen and (max-width: 991px) {
+  .footer__menu--items-biriki {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+.footer__menu--items--choice i {
+  display: flex;
+}
+.footer__menu--items--choice a {
+  color: #fff;
+  display: flex;
+  gap: 20px;
+}
+.footer__menu--items--choice a i {
+  display: flex;
+}
+.footer__menu--items--title {
+  margin-bottom: 20px;
+}
+.footer__menu--items--title a {
+  color: #fff;
+  font-size: 25px;
+  font-family: "DM serif display";
+}
+.footer_icons {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.footer_icon {
+  display: flex;
+  gap: 50px;
+}/*# sourceMappingURL=style.css.map */
